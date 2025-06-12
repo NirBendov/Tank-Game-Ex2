@@ -1,1 +1,1551 @@
-Tie, both players have zero tanks
+MaxSteps = 5000
+NumShells = 20
+Rows = 4
+Columns = 10
+Reading board contents...
+Reading line 6: #### @ @ 
+Reading line 7: # 1    @ 
+Reading line 8: #  2
+Finished constructing board
+Game data: 4 10
+
+Starting game...
+Initial board state:
+
+Current Board State:
+#### @ @  
+# 1    @  
+#  2      
+          
+
+Initializing players and tanks...
+Tank 0 has 20 shells
+Tank 1 has 20 shells
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 20 shells and is alive: 1
+No immediate game end conditions met
+Starting game loop...
+
+==================== Round 1 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 not found in history, creating new entry
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 1
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 not found in history, creating new entry
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 1
+Writing round to output file...
+Current board state after round 1:
+
+Current Board State:
+#### @ @  
+# 1    @  
+#  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 20 shells and is alive: 1
+No immediate game end conditions met
+Round 1 completed successfully
+
+==================== Round 2 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 1, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 6
+Tank 0 (Player 1) shooting from position (2,1)
+Tank 0 has 19 shells
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 4, 2 with value:  
+Checking cell: 5, 2 with value:  
+Checking cell: 6, 2 with value:  
+Checking cell: 7, 2 with value:  
+Checking cell: 8, 2 with value:  
+Checking cell: 9, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 6
+Tank 1 (Player 2) shooting from position (3,2)
+Tank 1 has 19 shells
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 6
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 2
+Tank 1 (P2): Alive | Action: 6
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 2
+Writing round to output file...
+Current board state after round 2:
+
+Current Board State:
+#### @ @  
+# 1    @  
+#  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 19 shells and is alive: 1
+No immediate game end conditions met
+Round 2 completed successfully
+
+==================== Round 3 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 1, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 4, 2 with value:  
+Checking cell: 5, 2 with value:  
+Checking cell: 6, 2 with value:  
+Checking cell: 7, 2 with value:  
+Checking cell: 8, 2 with value:  
+Checking cell: 9, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 3
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 3
+Writing round to output file...
+Current board state after round 3:
+
+Current Board State:
+#### @ @  
+- 1    @  
+#  2 *    
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 19 shells and is alive: 1
+No immediate game end conditions met
+Round 3 completed successfully
+
+==================== Round 4 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 2 with value:  
+Checking cell: 2, 3 with value:  
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 0 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 4
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 4
+Writing round to output file...
+Current board state after round 4:
+
+Current Board State:
+#### @ @  
+- 1    @  
+#  2   *  
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 19 shells and is alive: 1
+No immediate game end conditions met
+Round 4 completed successfully
+
+==================== Round 5 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 5
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 5
+Writing round to output file...
+Current board state after round 5:
+
+Current Board State:
+#### @ @  
+- 1    @  
+#  2     *
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 19 shells and is alive: 1
+No immediate game end conditions met
+Round 5 completed successfully
+
+==================== Round 6 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 3, 1 with value:  
+Checking cell: 4, 1 with value:  
+Checking cell: 5, 1 with value:  
+Checking cell: 6, 1 with value:  
+Checking cell: 7, 1 with value: @
+Checking cell: 8, 1 with value:  
+Checking cell: 9, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 2, 2 with value:  
+Checking cell: 1, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 6
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 6
+Writing round to output file...
+Current board state after round 6:
+
+Current Board State:
+#### @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 19 shells and is alive: 1
+No immediate game end conditions met
+Round 6 completed successfully
+
+==================== Round 7 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 6
+Tank 0 (Player 1) shooting from position (2,1)
+Tank 0 has 18 shells
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 0 with value: #
+Tank 0 chose action: 6
+Tank 1 (Player 2) shooting from position (3,2)
+Tank 1 has 18 shells
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 6
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 7
+Tank 1 (P2): Alive | Action: 6
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 7
+Writing round to output file...
+Current board state after round 7:
+
+Current Board State:
+#### @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 18 shells and is alive: 1
+No immediate game end conditions met
+Round 7 completed successfully
+
+==================== Round 8 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 0 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 8
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 8
+Writing round to output file...
+Current board state after round 8:
+
+Current Board State:
+#-#- @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 18 shells and is alive: 1
+No immediate game end conditions met
+Round 8 completed successfully
+
+==================== Round 9 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 9
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 9
+Writing round to output file...
+Current board state after round 9:
+
+Current Board State:
+#-#- @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 18 shells and is alive: 1
+No immediate game end conditions met
+Round 9 completed successfully
+
+==================== Round 10 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 1, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 4, 2 with value:  
+Checking cell: 5, 2 with value:  
+Checking cell: 6, 2 with value:  
+Checking cell: 7, 2 with value:  
+Checking cell: 8, 2 with value:  
+Checking cell: 9, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 10
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 10
+Writing round to output file...
+Current board state after round 10:
+
+Current Board State:
+#-#- @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 18 shells and is alive: 1
+No immediate game end conditions met
+Round 10 completed successfully
+
+==================== Round 11 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 2 with value:  
+Checking cell: 2, 3 with value:  
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 0 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 11
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 11
+Writing round to output file...
+Current board state after round 11:
+
+Current Board State:
+#-#- @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 18 shells and is alive: 1
+No immediate game end conditions met
+Round 11 completed successfully
+
+==================== Round 12 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 3, 1 with value:  
+Checking cell: 4, 1 with value:  
+Checking cell: 5, 1 with value:  
+Checking cell: 6, 1 with value:  
+Checking cell: 7, 1 with value: @
+Checking cell: 8, 1 with value:  
+Checking cell: 9, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 6
+Tank 0 (Player 1) shooting from position (2,1)
+Tank 0 has 17 shells
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 2, 2 with value:  
+Checking cell: 1, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 6
+Tank 1 (Player 2) shooting from position (3,2)
+Tank 1 has 17 shells
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 6
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 12
+Tank 1 (P2): Alive | Action: 6
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 12
+Writing round to output file...
+Current board state after round 12:
+
+Current Board State:
+#-#- @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 17 shells and is alive: 1
+No immediate game end conditions met
+Round 12 completed successfully
+
+==================== Round 13 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 13
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 13
+Writing round to output file...
+Current board state after round 13:
+
+Current Board State:
+#-#  @ @  
+- 1    @  
+-  2      
+  *       
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 17 shells and is alive: 1
+No immediate game end conditions met
+Round 13 completed successfully
+
+==================== Round 14 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 3, 1 with value:  
+Checking cell: 4, 1 with value:  
+Checking cell: 5, 1 with value:  
+Checking cell: 6, 1 with value:  
+Checking cell: 7, 1 with value: @
+Checking cell: 8, 1 with value:  
+Checking cell: 9, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 2, 2 with value:  
+Checking cell: 1, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 14
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 14
+Writing round to output file...
+Current board state after round 14:
+
+Current Board State:
+#--  @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 17 shells and is alive: 1
+No immediate game end conditions met
+Round 14 completed successfully
+
+==================== Round 15 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 0 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 15
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 15
+Writing round to output file...
+Current board state after round 15:
+
+Current Board State:
+#--  @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 17 shells and is alive: 1
+No immediate game end conditions met
+Round 15 completed successfully
+
+==================== Round 16 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 1, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 4, 2 with value:  
+Checking cell: 5, 2 with value:  
+Checking cell: 6, 2 with value:  
+Checking cell: 7, 2 with value:  
+Checking cell: 8, 2 with value:  
+Checking cell: 9, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 16
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 16
+Writing round to output file...
+Current board state after round 16:
+
+Current Board State:
+#--  @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 17 shells and is alive: 1
+No immediate game end conditions met
+Round 16 completed successfully
+
+==================== Round 17 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 17
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 17
+Writing round to output file...
+Current board state after round 17:
+
+Current Board State:
+#--  @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 17 shells and is alive: 1
+No immediate game end conditions met
+Round 17 completed successfully
+
+==================== Round 18 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 2 with value:  
+Checking cell: 2, 3 with value:  
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 6
+Tank 0 (Player 1) shooting from position (2,1)
+Tank 0 has 16 shells
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 0 with value:  
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 2 with value: %
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 0 with value:  
+Checking cell: 3, -1 with value:  
+Checking cell: 3, -2 with value:  
+Checking cell: 3, -3 with value:  
+Checking cell: 3, 0 with value:  
+Tank 0 chose action: 6
+Tank 1 (Player 2) shooting from position (3,2)
+Tank 1 has 16 shells
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 6
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 18
+Tank 1 (P2): Alive | Action: 6
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 18
+Writing round to output file...
+Current board state after round 18:
+
+Current Board State:
+#--  @ @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 16 shells and is alive: 1
+No immediate game end conditions met
+Round 18 completed successfully
+
+==================== Round 19 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 2 with value:  
+Checking cell: 2, 3 with value:  
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 0 with value:  
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 2 with value: %
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 0 with value:  
+Checking cell: 3, -1 with value:  
+Checking cell: 3, -2 with value:  
+Checking cell: 3, -3 with value:  
+Checking cell: 3, 0 with value:  
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 19
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 19
+Writing round to output file...
+Current board state after round 19:
+
+Current Board State:
+# -  M @  
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 16 shells and is alive: 1
+No immediate game end conditions met
+Round 19 completed successfully
+
+==================== Round 20 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 3, 1 with value:  
+Checking cell: 4, 1 with value:  
+Checking cell: 5, 1 with value:  
+Checking cell: 6, 1 with value:  
+Checking cell: 7, 1 with value: @
+Checking cell: 8, 1 with value:  
+Checking cell: 9, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 2, 2 with value:  
+Checking cell: 1, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 20
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 20
+Writing round to output file...
+Current board state after round 20:
+
+Current Board State:
+# -  @ @  
+- 1    @  
+-  2   *  
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 16 shells and is alive: 1
+No immediate game end conditions met
+Round 20 completed successfully
+
+==================== Round 21 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 21
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 21
+Writing round to output file...
+Current board state after round 21:
+
+Current Board State:
+# -  @ @ *
+- 1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 16 shells and is alive: 1
+No immediate game end conditions met
+Round 21 completed successfully
+
+==================== Round 22 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 2, 0 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 0 with value:  
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 2 with value: %
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 0 with value:  
+Checking cell: 3, 1 with value:  
+Checking cell: 3, 2 with value: %
+Checking cell: 3, 3 with value:  
+Checking cell: 3, 0 with value:  
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 22
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 22
+Writing round to output file...
+Current board state after round 22:
+
+Current Board State:
+# -  @ @  
+  1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 16 shells and is alive: 1
+No immediate game end conditions met
+Round 22 completed successfully
+
+==================== Round 23 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 1, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 6
+Tank 0 (Player 1) shooting from position (2,1)
+Tank 0 has 15 shells
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 4, 2 with value:  
+Checking cell: 5, 2 with value:  
+Checking cell: 6, 2 with value:  
+Checking cell: 7, 2 with value: *
+Checking cell: 8, 2 with value:  
+Checking cell: 9, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 6
+Tank 1 (Player 2) shooting from position (3,2)
+Tank 1 has 15 shells
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 6
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 23
+Tank 1 (P2): Alive | Action: 6
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 23
+Writing round to output file...
+Current board state after round 23:
+
+Current Board State:
+# -  @ @  
+  1    @  
+-  2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 15 shells and is alive: 1
+No immediate game end conditions met
+Round 23 completed successfully
+
+==================== Round 24 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Checking cell: 1, 1 with value:  
+Checking cell: 0, 1 with value: #
+Tank 0 chose action: 5
+Tank 0 (Player 1) rotating right 45 degrees
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Checking cell: 4, 2 with value:  
+Checking cell: 5, 2 with value:  
+Checking cell: 6, 2 with value:  
+Checking cell: 7, 2 with value: *
+Checking cell: 8, 2 with value:  
+Checking cell: 9, 2 with value:  
+Checking cell: 0, 2 with value: #
+Tank 0 chose action: 5
+Tank 1 (Player 2) rotating right 45 degrees
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 5
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 24
+Tank 1 (P2): Alive | Action: 5
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 24
+Writing round to output file...
+Current board state after round 24:
+
+Current Board State:
+# -  @ @  
+  1 *  @  
+-* 2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 15 shells and is alive: 1
+No immediate game end conditions met
+Round 24 completed successfully
+
+==================== Round 25 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 7
+Tank 0 (Player 1) requesting battle info
+Player1: Updating battle info for tank
+Player1: Battle info updated, sending to tank algorithm
+Player1: Tank algorithm updated with battle info
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 7
+Tank 1 (Player 2) requesting battle info
+Player2: Updating battle info for tank
+Player2: Battle info updated, sending to tank algorithm
+Player2: Tank algorithm updated with battle info
+Checking for tank swapping...
+
+Checking for tank swapping...
+Tank 0 (Player 1) has no previous position, skipping
+Tank 1 (Player 2) has no previous position, skipping
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Alive | Action: 7
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 25
+Tank 1 (P2): Alive | Action: 7
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 25
+Writing round to output file...
+Current board state after round 25:
+
+Current Board State:
+# -  @ @  
+  1   *@  
+   2      
+          
+
+Player 1 tanks remaining: 1
+Player 2 tanks remaining: 1
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 1
+Player 2 tanks: 1
+Tank 0 has 15 shells and is alive: 1
+No immediate game end conditions met
+Round 25 completed successfully
+
+==================== Round 26 ====================
+Saving current board state...
+Starting new round for all tanks...
+First shell movement phase...
+Second shell movement phase...
+Updating tanks and checking collisions...
+
+Updating Player 1 tanks...
+Processing Tank 0 (Player 1) at position (2,1)
+Tank 0 chose action: 0
+Tank 0 (Player 1) attempting to move forward to (3,2)
+Tank 0 (Player 1) moved from (2,1) to (3,2)
+Updating Player 2 tanks...
+Processing Tank 0 (Player 2) at position (3,2)
+Tank 0 chose action: 0
+Tank 1 (Player 2) attempting to move forward to (2,1)
+Tank 1 (Player 2) moved from (3,2) to (2,1)
+Checking for tank swapping...
+
+Checking for tank swapping...
+Checking tank 1 (Player 2) at (2,1) with previous position (3,2)
+Found another tank 0 (Player 1) at previous position
+Confirmed swap: Tank 1 moved from (3,2) to (2,1)
+              Tank 0 moved from (2,1) to (3,2)
+Tanks 1 and 0 swapped places - handling collision
+
+Handling tank swap collision:
+Tank 1 (Player 2) at (2,1)
+Tank 0 (Player 1) at (3,2)
+Both tanks destroyed. Remaining tanks - Player 1: 0, Player 2: 0
+Skipping dead tank at position (3,2)
+Logging round information...
+
+Logging round information...
+Tank 0 (P1): Dead | Action: 0 (Killed)
+Adding round for Tank 0
+Tank 0 found in history, adding new round
+Added round for Tank 0, history size: 26
+Tank 1 (P2): Dead | Action: 0 (Killed)
+Adding round for Tank 1
+Tank 1 found in history, adding new round
+Added round for Tank 1, history size: 26
+Writing round to output file...
+Current board state after round 26:
+
+Current Board State:
+# -  @ @  
+       @* 
+          
+          
+
+Player 1 tanks remaining: 0
+Player 2 tanks remaining: 0
+Checking for game end conditions...
+Checking immediate game end conditions:
+Player 1 tanks: 0
+Player 2 tanks: 0
+Tank 0 has 15 shells and is alive: 0
+All tanks have run out of shells
+Rounds since all tanks ran out of shells: 1
+Game end: Both players have no tanks remaining - Tie
+Game ended after round 26
+Game finished.

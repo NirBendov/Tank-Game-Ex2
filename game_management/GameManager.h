@@ -86,12 +86,12 @@ private:
     // Shell management
     void detectShellCrossings(vector<bool>& shellsToRemove, map<pair<size_t, size_t>, vector<size_t>>& nextPositions);
     void removeMarkedShells(const vector<bool>& shellsToRemove);
-    void handleShellPositions(const map<pair<size_t, size_t>, vector<size_t>>& nextPositions);
+    std::vector<std::pair<size_t, size_t>> handleShellPositions(const map<pair<size_t, size_t>, vector<size_t>>& nextPositions);
 
     // Collision handling helpers
-    void handleTankCollision(const pair<size_t, size_t>& pos, const vector<size_t>& shellIndices);
-    void handleWallCollision(const pair<size_t, size_t>& pos, const vector<size_t>& shellIndices);
-    void handleDamagedWallCollision(const pair<size_t, size_t>& pos, const vector<size_t>& shellIndices);
+    void handleTankCollision(const pair<size_t, size_t>& pos);
+    void handleWallCollision(const pair<size_t, size_t>& pos);
+    void handleDamagedWallCollision(const pair<size_t, size_t>& pos);
     void handleMineCollision(const pair<size_t, size_t>& pos);
     void handleMultipleShellCollision(const pair<size_t, size_t>& pos);
     void findAndKillTank(size_t x, size_t y);

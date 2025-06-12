@@ -4,6 +4,7 @@
 #include "BoardConstants.h"
 #include <iostream>
 #include <climits>
+#include <limits>
 
 OffensiveTankAlgorithm::OffensiveTankAlgorithm() : boardWidth(0), boardHeight(0), turnCounter(0), tankX(-1), tankY(-1),
       dirX(0), dirY(0), directionInitialized(false), currentMode(OperationsMode::Regular)
@@ -91,7 +92,7 @@ void OffensiveTankAlgorithm::updateBattleInfo(BattleInfo& info)
     // find path to closest enemy
     Point start = {tankX, tankY};
     std::vector<Point> closestPath;
-    int minPathLength = INT_MAX;
+    size_t minPathLength = std::numeric_limits<size_t>::max();
 
     // Determine enemy tank character based on player index
     char enemyTankChar = (playerIndex == 1) ? '2' : '1';  // Player 1 looks for '2', Player 2 looks for '1'

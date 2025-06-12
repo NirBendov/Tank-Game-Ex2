@@ -5,6 +5,7 @@
 #include "../common/ActionRequest.h"
 #include "../common/RoundInfo.h"
 #include <optional>
+#include <iostream>
 
 class TankInfo : public MovableObject {
 private:
@@ -30,7 +31,7 @@ public:
     bool getIsMovingBackward() const { return isMovingBackward; }
     int getBackwardMoveCounter() const { return backwardMoveCounter; }
     int getNumShells() const { return numShells; }
-    void setNumShells(int shells) { numShells = shells; }
+    void setNumShells(int shells) { numShells = shells; std::cout << "Tank " << creationOrder << " has " << numShells << " shells" << std::endl; }
 
     // RoundInfo getters and setters
     bool getRoundIsAlive() const { return roundInfo.isAlive; }

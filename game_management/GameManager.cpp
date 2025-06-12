@@ -1,6 +1,7 @@
 #include "GameManager.h"
 #include "../common/GameSatelliteView.h"
 #include <algorithm>
+#include <set>
 
 using namespace std;
 using namespace BoardConstants;
@@ -27,6 +28,7 @@ void GameManager::setOutputFile() {
 bool GameManager::checkAllTanksOutOfShells() {
     // Check player 1 tanks
     for (const auto& tank : player1Tanks) {
+        std::cout << "Tank " << tank.getCreationOrder() << " has " << tank.getNumShells() << " shells" << " and is alive: " << tank.getIsAlive() << std::endl;
         if (tank.getIsAlive() && tank.getNumShells() > 0) {
             return false;
         }
@@ -215,7 +217,7 @@ void GameManager::findAndKillTank(size_t x, size_t y) {
     }
 }
 
-void GameManager::handleTankCollision(const pair<size_t, size_t>& pos, const vector<size_t>& shellIndices) {
+void GameManager::handleTankCollision(const pair<size_t, size_t>& pos) {
     // Kill the tank
     findAndKillTank(pos.first, pos.second);
     
@@ -223,12 +225,12 @@ void GameManager::handleTankCollision(const pair<size_t, size_t>& pos, const vec
     gameData.board[pos.second][pos.first] = EMPTY_SPACE;
 }
 
-void GameManager::handleWallCollision(const pair<size_t, size_t>& pos, const vector<size_t>& shellIndices) {
+void GameManager::handleWallCollision(const pair<size_t, size_t>& pos) {
     // we their is only one shell, so we can just destroy the wall
     gameData.board[pos.second][pos.first] = DAMAGED_WALL;
 }
 
-void GameManager::handleDamagedWallCollision(const pair<size_t, size_t>& pos, const vector<size_t>& shellIndices) {
+void GameManager::handleDamagedWallCollision(const pair<size_t, size_t>& pos) {
     // Any number of shells destroys a damaged wall
     gameData.board[pos.second][pos.first] = EMPTY_SPACE;
 }
@@ -260,11 +262,13 @@ void GameManager::handleMultipleShellCollision(const pair<size_t, size_t>& pos) 
     gameData.board[pos.second][pos.first] = EMPTY_SPACE;
 }
 
-void GameManager::handleShellPositions(const map<pair<size_t, size_t>, vector<size_t>>& nextPositions) {
+std::vector<std::pair<size_t, size_t>> GameManager::handleShellPositions(const map<pair<size_t, size_t>, vector<size_t>>& nextPositions) {
+    std::vector<std::pair<size_t, size_t>> collisionPositions;
     for (const auto& [pos, shellIndices] : nextPositions) {
         if (shellIndices.size() > 1) {
             // Multiple shells in same position - destroy everything
             handleMultipleShellCollision(pos);
+            collisionPositions.push_back(pos);
             continue;
         }
 
@@ -273,13 +277,16 @@ void GameManager::handleShellPositions(const map<pair<size_t, size_t>, vector<si
         switch (nextCell) {
             case PLAYER1_TANK:
             case PLAYER2_TANK:
-                handleTankCollision(pos, shellIndices);
+                handleTankCollision(pos);
+                collisionPositions.push_back(pos);
                 break;
             case WALL:
-                handleWallCollision(pos, shellIndices);
+                handleWallCollision(pos);
+                collisionPositions.push_back(pos);
                 break;
             case DAMAGED_WALL:
-                handleDamagedWallCollision(pos, shellIndices);
+                handleDamagedWallCollision(pos);
+                collisionPositions.push_back(pos);
                 break;
             case MINE:
                 handleMineCollision(pos);
@@ -289,6 +296,7 @@ void GameManager::handleShellPositions(const map<pair<size_t, size_t>, vector<si
                 break;
         }
     }
+    return collisionPositions;
 }
 
 void GameManager::moveShells() {
@@ -312,7 +320,16 @@ void GameManager::moveShells() {
     removeMarkedShells(shellsToRemove);
     
     // Handle shell positions and collisions
-    handleShellPositions(nextPositions);
+    auto collisionPositions = handleShellPositions(nextPositions);
+
+    // Remove shells whose next position is in collisionPositions
+    std::set<std::pair<size_t, size_t>> collisionSet(collisionPositions.begin(), collisionPositions.end());
+    for (int i = static_cast<int>(activeShells.size()) - 1; i >= 0; --i) {
+        auto nextPos = activeShells[i].getPotentialMove();
+        if (collisionSet.count(nextPos)) {
+            activeShells.erase(activeShells.begin() + i);
+        }
+    }
     
     // Move remaining shells
     for (auto& shell : activeShells) {
@@ -894,13 +911,13 @@ void GameManager::run() {
     printBoard();
     setOutputFile();  // Empty string since we use input filename
     
+    std::cout << "Initializing players and tanks..." << std::endl;
+    initializePlayersAndTanks();
+
     if (checkImmediateGameEnd()) {
         std::cout << "Game ended immediately due to initial conditions." << std::endl;
         return;
     }
-    
-    std::cout << "Initializing players and tanks..." << std::endl;
-    initializePlayersAndTanks();
     
     std::cout << "Starting game loop..." << std::endl;
     runGameLoop();

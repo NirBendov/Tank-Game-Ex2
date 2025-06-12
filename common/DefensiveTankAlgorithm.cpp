@@ -97,6 +97,13 @@ bool DefensiveTankAlgorithm::isInDanger() const {
 void DefensiveTankAlgorithm::updateDirection(ActionRequest action) {
     int newDirX, newDirY;
     switch (action) {
+        case ActionRequest::MoveForward:
+        case ActionRequest::MoveBackward:
+        case ActionRequest::Shoot:
+        case ActionRequest::GetBattleInfo:
+        case ActionRequest::DoNothing:
+            // No direction change needed for these actions
+            break;
         case ActionRequest::RotateLeft45:
             // Rotate 45 degrees left: (x,y) -> ((x-y)/√2, (x+y)/√2)
             // Since we only use -1,0,1, we can simplify to:

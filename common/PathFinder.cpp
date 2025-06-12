@@ -23,7 +23,7 @@ const int directions[8][2] = {
 };
 
 bool isValid(int x, int y, const vector<vector<char>>& grid, const vector<vector<bool>>& visited, bool includeWalls) {
-    if (x < 0 || x >= grid[0].size() || y < 0 || y >= grid.size()) {
+    if (x < 0 || x >= static_cast<int>(grid[0].size()) || y < 0 || y >= static_cast<int>(grid.size())) {
         return false;
     }
     if (visited[y][x]) {

@@ -39,6 +39,7 @@ TankInfo::TankInfo(size_t x, size_t y, int dx, int dy, std::unique_ptr<TankAlgor
     roundInfo.isAlive = true;
     // Set the initial direction
     setDirection(dx, dy);
+    std::cout << "Tank " << creationOrder << " has " << numShells << " shells" << std::endl;
 }
 
 // Tank-specific getters

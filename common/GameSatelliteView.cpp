@@ -9,7 +9,7 @@ GameSatelliteView::~GameSatelliteView() {}
 
 char GameSatelliteView::getObjectAt(size_t x, size_t y) const {
     // Check if coordinates are out of bounds
-    if (x >= columns || y >= rows || x < 0 || y < 0) {
+    if (x >= columns || y >= rows) {
         return BoardConstants::INVALID_LOCATION;
     }
 

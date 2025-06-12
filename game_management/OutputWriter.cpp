@@ -33,14 +33,14 @@ std::string OutputWriter::actionToString(ActionRequest action) const {
 void OutputWriter::addRoundForTank(int tankId, const RoundInfo& info) {
     std::cout << "Adding round for Tank " << tankId << std::endl;
     // Ensure the tankHistory vector is large enough
-    if (tankId >= tankHistory.size()) {
+    if (static_cast<size_t>(tankId) >= tankHistory.size()) {
         std::cout << "Tank " << tankId << " not found in history, creating new entry" << std::endl;
-        tankHistory.resize(tankId + 1);
+        tankHistory.resize(static_cast<size_t>(tankId) + 1);
     }
     
     std::cout << "Tank " << tankId << " found in history, adding new round" << std::endl;
-    tankHistory[tankId].push_back(info);
-    std::cout << "Added round for Tank " << tankId << ", history size: " << tankHistory[tankId].size() << std::endl;
+    tankHistory[static_cast<size_t>(tankId)].push_back(info);
+    std::cout << "Added round for Tank " << tankId << ", history size: " << tankHistory[static_cast<size_t>(tankId)].size() << std::endl;
 }
 
 void OutputWriter::writeRoundToFile(const std::vector<RoundInfo>& currentRound) {
