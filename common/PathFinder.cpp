@@ -4,6 +4,7 @@
 #include <stack>
 #include <algorithm>
 #include <cmath>
+#include <array>
 #include "../constants/BoardConstants.h"
 #include "PathFinder.h"
 #include "ActionRequest.h"

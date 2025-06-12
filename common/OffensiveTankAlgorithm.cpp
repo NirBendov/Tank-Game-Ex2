@@ -3,6 +3,7 @@
 #include "ActionRequest.h"
 #include "BoardConstants.h"
 #include <iostream>
+#include <climits>
 
 OffensiveTankAlgorithm::OffensiveTankAlgorithm() : boardWidth(0), boardHeight(0), turnCounter(0), tankX(-1), tankY(-1),
       dirX(0), dirY(0), directionInitialized(false), currentMode(OperationsMode::Regular)
