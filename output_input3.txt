@@ -1,0 +1,8 @@
+GetBattleInfo, GetBattleInfo
+Shoot, Shoot
+RotateRight45, RotateRight45
+RotateRight45, RotateRight45
+GetBattleInfo, GetBattleInfo
+RotateRight45, RotateRight45
+Shoot (killed), Shoot (killed)
+Tie, both players have zero tanks

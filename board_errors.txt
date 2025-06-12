@@ -1,0 +1,84 @@
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: No tanks found for Player 1. Player 1 will lose immediately.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: No tanks found for either player. This will result in an immediate tie.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: Line 6 is shorter than specified width. Adding empty spaces.
+Warning: Line 7 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: File has fewer rows than specified height. Adding empty rows.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: Line 6 is shorter than specified width. Adding empty spaces.
+Warning: Line 7 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: Line 8 is shorter than specified width. Adding empty spaces.
+Warning: File has fewer rows than specified height. Adding empty rows.
+Warning: File has more rows than specified height. Extra rows will be ignored.
+Warning: File has more rows than specified height. Extra rows will be ignored.
